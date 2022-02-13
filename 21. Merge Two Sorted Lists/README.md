@@ -1,28 +1,28 @@
-Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum.
+You are given the heads of two sorted linked lists list1 and list2.
 
-A subarray is a contiguous part of an array.
+Merge the two lists in a one sorted list. The list should be made by splicing together the nodes of the first two lists.
+
+Return the head of the merged linked list.
 
  
 
 Example 1:
 
-Input: nums = [-2,1,-3,4,-1,2,1,-5,4]
-Output: 6
-Explanation: [4,-1,2,1] has the largest sum = 6.
+
+Input: list1 = [1,2,4], list2 = [1,3,4]
+Output: [1,1,2,3,4,4]
 Example 2:
 
-Input: nums = [1]
-Output: 1
+Input: list1 = [], list2 = []
+Output: []
 Example 3:
 
-Input: nums = [5,4,-1,7,8]
-Output: 23
+Input: list1 = [], list2 = [0]
+Output: [0]
  
 
 Constraints:
 
-1 <= nums.length <= 105
--104 <= nums[i] <= 104
- 
-
-Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle.
+The number of nodes in both lists is in the range [0, 50].
+-100 <= Node.val <= 100
+Both list1 and list2 are sorted in non-decreasing order.
